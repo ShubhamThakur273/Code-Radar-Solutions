@@ -6,10 +6,10 @@ int main() {
     scanf("%d",&a);
     while(a>0)
     {
-        b=a/2;
+        b=a%2;
         c=c+(d*b);
         d=d*10;
-        a=a%2;
+        a=a/2;
     }
     printf("%d",c);
     return 0;
