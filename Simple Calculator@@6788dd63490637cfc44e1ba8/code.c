@@ -6,9 +6,9 @@ int main() {
     
     scanf("%c",&oper);
     switch(oper){
-        case'+':
-        printf("%d",a+b);
-        break;
+        case '+':
+            printf("%d",a+b);
+            break;
 
     }
 }
