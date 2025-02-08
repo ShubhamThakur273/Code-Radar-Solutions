@@ -2,10 +2,10 @@
 int main(){
     int a;
     scanf("%d",&a);
-    if((a==1)&&(a/a==0)){
+    if((a==1)&&(a/a==0)&&(a>4)){
         printf("Prime");
     }
-    if(a==2){
+    else if(a==2){
         printf("Prime");
     }
     
