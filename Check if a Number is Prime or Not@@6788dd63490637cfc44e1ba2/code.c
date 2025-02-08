@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <math.h>
 int main() {
-    int a,i,count=0;
-    scanf("%d",&a);
-    for(i=1;i<=1;i++){
-        if(a%i==0)
-        {
-            count++;
-        }
-        }
-    if(i==2){
-        printf("Prime");
+    int a, i, count = 0;
+    scanf("%d", &a);
+
+    if (a <= 1) {
+        printf("Not Prime");
+        return 0;
     }
-    else{
+    for(i = 2; i <= sqrt(a); i++) {
+        if (a % i == 0) {
+            count++;
+            break;
+        }
+    }
+    if(count == 0) {
+        printf("Prime");
+    } else {
         printf("Not Prime");
     }
 
-    }
-
-
+    return 0;
+}
