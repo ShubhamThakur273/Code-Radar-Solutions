@@ -20,4 +20,7 @@ int main(){
     else if(a==6){
         printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n");
     }
+    else if(a==7){
+        printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n* * * * * * *\n");
+
 }
