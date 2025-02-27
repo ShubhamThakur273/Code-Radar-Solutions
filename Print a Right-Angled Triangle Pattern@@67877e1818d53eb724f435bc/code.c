@@ -1,27 +1,12 @@
 #include <stdio.h>
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(a==1){
-        printf("*\n");
-    }
-    else if(a==2){
-        printf("*\n* *\n");
-    }
-    else if(a==3){
-        printf("*\n* *\n* * *\n");
-    }
-    else if(a==4){
-        printf("*\n* *\n* * *\n* * * *\n");
-    }
-    else if(a==5){
-        printf("*\n* *\n* * *\n* * * *\n* * * * *\n");
-    }
-    else if(a==6){
-        printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n");
-    }
-    else if(a==7){
-        printf("*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n* * * * * * *\n");
+        int i,j,n;
+        scanf("%d",&n);
+        for(i=1;i<=n;i++){
+            for(j=1;j<=i;j++){
+                printf("* "); 
+            }
+            printf("\n");
+        }
 
-}
-}
+    }
