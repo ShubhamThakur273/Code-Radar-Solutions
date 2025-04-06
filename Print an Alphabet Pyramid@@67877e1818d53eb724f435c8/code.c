@@ -13,4 +13,6 @@ int main(){
     scanf("%d",&n);
     alphatri(n);
 
+return 0;
+
 }
