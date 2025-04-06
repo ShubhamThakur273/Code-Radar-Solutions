@@ -1,16 +1,24 @@
 #include <stdio.h>
+int isprime(int n){
+    if(n<=1){
+        return 0;
+    }
+    for(int i=2;i*i<=n;i++){
+        if(num%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
 int main(){
-    int a;
-    scanf("%d",&a);
-    if((a==1)||((a/a==0)&&(a>4))){
+    int n;
+    scanf("%d",&n);
+    if(isprime(n)){
         printf("Prime");
     }
-    else if(a==2){
-        printf("Prime");
-    }
-    
     else{
         printf("Not Prime");
     }
-}
+    
 
+}
