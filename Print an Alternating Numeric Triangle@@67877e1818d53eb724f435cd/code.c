@@ -1,5 +1,5 @@
 #include <stdio.h>
-int logicless-triangle(int n){
+int logicless_triangle(int n){
     for(int i=1;i<=n;i++){
         for(int j=1;j<=i;j++){
             printf("%d",(i+j)%2);
@@ -11,6 +11,6 @@ int logicless-triangle(int n){
 int main(){
     int n;
     scanf("%d",&n);
-    logicless(n);
+    logicless_triangle(n);
 
 }
