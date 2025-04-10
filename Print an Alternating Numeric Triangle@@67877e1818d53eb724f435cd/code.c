@@ -12,5 +12,5 @@ int main(){
 int n;
 scanf("%d",&n);
 logicless_triangle(n);
-
+return 0;
 }
