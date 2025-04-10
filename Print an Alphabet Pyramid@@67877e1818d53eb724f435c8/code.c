@@ -1,21 +1,14 @@
 #include <stdio.h>
-
-void printAlphabetTriangle(int n) {
-    // Outer loop to control the rows
-    for (int row = 1; row <= n; row++) {
-        // Inner loop to print characters in each row
-        for (int col = 1; col <= row; col++) {
-            printf("%c ", 'A' + col - 1);  // Print the character by shifting from 'A'
+int alphatri(int n){
+    for(int i=1;i<n;i++){
+        for(int j=1;j<i;j++){
+            printf("%c ",'A'+i-1);
         }
-        // Print a newline after each row
         printf("\n");
     }
 }
-
-int main() {
+int main(){
     int n;
-    scanf("%d", &n);
-    printAlphabetTriangle(n);
-
-    return 0;
+    scanf("%d",&n);
+    alphatri(n);
 }
