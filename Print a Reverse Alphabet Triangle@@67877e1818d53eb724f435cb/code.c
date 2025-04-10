@@ -11,7 +11,6 @@ void reverse_alpha_triangle(int n) {
 
 int main() {
     int n;
-    printf("Enter number of rows: ");
     scanf("%d", &n);
     reverse_alpha_triangle(n);
     return 0;
