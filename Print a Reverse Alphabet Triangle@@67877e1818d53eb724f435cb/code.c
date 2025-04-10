@@ -1,7 +1,7 @@
 #include <stdio.h>
 int reverse_alpha_tri(int n){
     for(int i=n;i>=1;i--){
-        for(j=1;j<=i;j++){
+        for(int j=1;j<=i;j++){
             printf("%c ",'A'+j-1);
         }
         printf("\n");
