@@ -1,6 +1,6 @@
 #include <stdio.h>
 int reverse_alpha_triangle(int n){
-    for(int i=n;i<=1;i--){
+    for(int i=n;i>=1;i--){
         for(int j=i;j<=1;j--){
             printf("%c ",'A'+j-1);
         }
